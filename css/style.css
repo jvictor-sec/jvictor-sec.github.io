@@ -3,6 +3,10 @@
   --text-primary-color: #0A0A0A;
   --text-secondary-color: #414141;
   --bg-primary-color: #FFF;
+  --bg-secondary-color: #11257D;
+  --title-color: #141C3A;
+  --border-color: #E6EDF6;
+  /* --margin-color:  */
 }
 
 * {
@@ -120,8 +124,105 @@
 }
 
 .about-section p {
-  width: 70%;
+  width: 100%;
   margin-top: 1em;
   font-size: 1em;
+  line-height: 1.7em;
   color: var(--bg-primary-color);
+}
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin-top: -10em;
+  background-color: var(--bg-primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 1.5em;
+  /* padding: 2em; */
+  /* border: 1px solid red; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  width: 33%;
+  padding: 2em;
+  /* border: 1px solid red; */
+}
+
+.card:nth-child(2) {
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 35%;  */
+  /* border: 1px solid red; */
+}
+
+.card-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary-color);
+}
+
+.card-logo ion-icon {
+  font-size: 2.5em;
+}
+
+.card-header h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-top: 1em;
+  letter-spacing: 0.5px;
+}
+
+.card-header p {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.card-list h2 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-top: 1em;
+  letter-spacing: 0.5px;
+}
+
+.card-list p {
+  margin-top: 1em;
+}
+
+.card-items h2 {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-top: 1em;
+  letter-spacing: 0.5px;
+}
+
+.card-items ul {
+  list-style: none;
+  margin-top: 1em;
+  text-align: center;
 }
