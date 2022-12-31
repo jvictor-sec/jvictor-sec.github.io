@@ -17,12 +17,19 @@
   /* background-color: var(--text-primary-color); */
 }
 
+/*
+
+  - Sessão de header
+
+*/
+
 .header-container {
-  /* position: fixed;
+  position: fixed;
   top: 0;
-  width: 100%; */
+  left: 0;
+  width: 100%;
   background: white;
-  /* z-index: 9999; */
+  z-index: 9999;
   box-shadow: 0px 1px 15px -3px rgba(0,0,0,0.4);
 }
 
@@ -51,7 +58,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 7em;
+  gap: 5em;
   /* border: 1px solid red; */
 }
 
@@ -66,8 +73,8 @@
   color: var(--primary-color);
 }
 
-.menu-container li button {
-  font-size: 0.9em;
+.menu-container li .mail {
+  font-size: 0.8em;
   font-weight: 500;
   color: var(--primary-color);
   background-color: var(--bg-primary-color);
@@ -75,10 +82,11 @@
   border: 2px solid var(--primary-color);
   border-radius: 3em;
   cursor: pointer;
+  text-decoration: none;
   transition: 0.5s
 }
 
-.menu-container li button:hover {
+.menu-container li .mail:hover {
   color: var(--bg-primary-color);
   background-color: var(--primary-color);
 }
@@ -89,11 +97,19 @@
   /* border: 1px solid red; */
 }
 
+
+/*
+
+  - Home
+
+*/
+
 .home-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 12vh;
   /* text-align: center; */
   /* border: 1px solid red; */
 }
@@ -112,7 +128,17 @@
   color: var(--text-secondary-color)
 }
 
-.about-section {
+.home-section img {
+  width: 45%;
+}
+
+/*
+
+  - Sessão sobre
+
+*/
+
+#about-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,14 +148,14 @@
   /* border: 1px solid red; */
 }
 
-.about-section h2 {
+#about-section h2 {
   font-size: 1.5em;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--bg-primary-color);
 }
 
-.about-section p {
+#about-section p {
   width: 100%;
   margin-top: 1em;
   font-size: 1em;
@@ -137,7 +163,13 @@
   color: var(--bg-primary-color);
 }
 
-.skills-section {
+/*
+
+  - Sessão de competências
+
+*/
+
+#skills-section {
   display: flex;
   justify-content: center;
   /* border: 1px solid red; */
@@ -152,6 +184,7 @@
   background-color: var(--bg-primary-color);
   border: 1px solid var(--border-color);
   border-radius: 1.5em;
+  /* border: 1px solid red; */
   /* padding: 2em; */
   /* border: 1px solid red; */
 }
@@ -240,7 +273,7 @@
 
 */
 
-.projects-section {
+#projects-section {
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: center;
@@ -251,7 +284,7 @@
   /* border: 1px solid red; */
 }
 
-.projects-section h2 {
+#projects-section h2 {
   font-size: 1.5em;
   font-weight: 700;
   color: var(--bg-primary-color);
@@ -278,7 +311,7 @@
   transition: all 0.3s ease-out;
 }
 
-.project-header h2 {
+#projects-section .project-header h2 {
   font-size: 1.3em;
   font-weight: 700;
   color: var(--title-color);
@@ -301,25 +334,28 @@
   transform: translateY(-0.5em);
 }
 
-.projects-section button {
+#projects-section .learn-more {
   font-size: 0.9em;
   font-weight: 500;
   background-color: var(--bg-primary-color);
   padding: 0.7em 0.8em;
   border: 2px solid var(--title-color);
   border-radius: 3em;
-  cursor: pointer;
-  transition: 0.5s;
-}
-
-.projects-section button a {
   text-decoration: none;
   color: var(--title-color);
+  cursor: pointer;
+  transition: 0.3s;
 }
 
+/* .projects-section button a {
+  text-decoration: none;
 
-.projects-section button:hover {
-  transform: translateY(-0.25em);
+} */
+
+
+#projects-section .learn-more:hover {
+  color: var(--bg-primary-color);
+  background-color: var(--title-color);
 }
 
 .projects-row:nth-child(2) .project:nth-child(1) {
@@ -346,7 +382,7 @@
   border-left: 3px solid red;
 }
 
-.footer-container {
+#footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -386,3 +422,21 @@
   background-color: var(--bg-primary-color);
   color: var(--bg-secondary-color);
 }
+
+#footer-container p {
+  font-weight: 500
+}
+
+/* @media (max-width: 810px) {
+  .menu-container {
+    gap: 2em;
+  }
+
+  .section {
+    padding: 1em 4em;
+  }
+
+  .home-section img {
+    width: 60%;
+  }
+} */

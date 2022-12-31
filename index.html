@@ -27,10 +27,11 @@
         </div>
 
         <ul class="menu-container">
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Competências</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><button type="button">Fale Comigo</button></li>
+          <li><a href="#about-section">Sobre</a></li>
+          <li><a href="#skills-section">Competências</a></li>
+          <li><a href="#projects-section">Projetos</a></li>
+          <li><a href="#footer-container">Contato</a></li>
+          <li><a href="mailto:jvteodorobrasil@gmail.com" class="mail">Fale comigo</a></li>
         </ul>
       </nav>
     </header>
@@ -41,15 +42,17 @@
 
         <p>Desenvolvo aplicações completas que resolvem os problemas cotidianos</p>
 
-        <img src="./assets/images/develop-web.gif" alt="https://media.tenor.com/CeDk6XdCgOUAAAAi/develop-web.gif" width="45%">
+        <img src="./assets/images/develop-web.gif" alt="https://media.tenor.com/CeDk6XdCgOUAAAAi/develop-web.gif">
       </section>
 
-      <section class="about-section section">
+      <section id="about-section" class="section">
         <h2>Seja bem vindo! Eu me chamo João Victor.</h2>
-        <p>Desde o início dos meus estudos em 2020, sempre tive uma curiosidade acentuada com relação a como as coisas realmente funcionavam. Assim, desenvolvi minhas habilidades buscando aprender como cada linha de código era compilada, o que me levou ao mundo da cibersegurança. Hoje atuo como desenvolvedor, pavimentando o caminho para a carreira que desejo atuar, a da Segurança da Informação.</p>
+        <p>Desde o início dos meus estudos em 2020, sempre tive uma curiosidade acentuada com relação a como as
+          coisas realmente funcionavam. Assim, desenvolvi minhas habilidades buscando aprender como cada linha de
+          código era compilada, o que me levou ao mundo da cibersegurança.</p>
       </section>
 
-      <section class="skills-section section">
+      <section id="skills-section" class="section">
         <div class="card-container">
           <div class="card">
               <div class="card-header card-section">
@@ -142,7 +145,7 @@
         </div>
       </section>
 
-      <section class="projects-section section">
+      <section id="projects-section" class="section">
 
         <h2>Projetos</h2>
 
@@ -172,7 +175,7 @@
           <div class="project">
             <div class="project-header">
               <h2>Angular To-do list</h2>
-              <p>To-do List programada em Typescripta utilizando Angular. Clique <a href="https://github.com/jvictort/angular-todolist">aqui</a> para saber mais.</p>
+              <p>To-do List programada em Typescript utilizando Angular. Clique <a href="https://github.com/jvictort/angular-todolist">aqui</a> para saber mais.</p>
             </div>
 
             <div class="project-logo">
@@ -216,23 +219,22 @@
           </div>
         </div>
 
-        <button type="button"><a href="https://github.com/jvictort">Saiba mais</a></button>
+        <a href="https://github.com/jvictort" class="learn-more">Saiba mais</a>
       </section>
 
-      <footer class="footer-container">
+      <footer id="footer-container">
         <div class="footer-header">
           <h2>Vivendo, aprendendo e codando.</h2>
         </div>
 
         <ul class="footer-links">
-          <li><a href="mailto:jveodorobrasil@gmail.com"><ion-icon name="mail"></ion-icon></a></li>
           <li><a href="https://www.linkedin.com/in/jvictorteodoro/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></li>
           <li><a href="https://github.com/jvictort" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github"></ion-icon></a></li>
           <li><a href="https://www.instagram.com/jvictor_t/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
           <li><a href="https://www.facebook.com/joaovictor.teodoro.925/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></li>
         </ul>
 
-        <p>Feito à mão por mim - &#169; 2022</p>
+        <p><small>Feito à mão por mim - &#169; 2022</small></p>
       </footer>
     </main>
   </body>
