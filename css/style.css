@@ -20,8 +20,9 @@
 .header-container {
   /* position: fixed;
   top: 0;
-  width: 100%;
-  background: white; */
+  width: 100%; */
+  background: white;
+  /* z-index: 9999; */
   box-shadow: 0px 1px 15px -3px rgba(0,0,0,0.4);
 }
 
@@ -39,6 +40,11 @@
   color: var(--text-primary-color);
   font-weight: 500;
   font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.logo a:hover {
+  opacity: 0.8
 }
 
 .menu-container {
@@ -141,7 +147,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  /* height: auto; */
   margin-top: -10em;
   background-color: var(--bg-primary-color);
   border: 1px solid var(--border-color);
@@ -157,6 +163,7 @@
   gap: 2.5em;
   width: 33%;
   padding: 2em;
+  height: 100%;
   /* border: 1px solid red; */
 }
 
@@ -170,7 +177,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 35%;  */
+  /* height: 35%;  */
   /* border: 1px solid red; */
 }
 
@@ -178,8 +185,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 5em;
+  height: 5em;
   border-radius: 50%;
   background-color: var(--bg-secondary-color);
 }
@@ -225,4 +232,157 @@
   list-style: none;
   margin-top: 1em;
   text-align: center;
+}
+
+/*
+
+  - Sessão de projetos
+
+*/
+
+.projects-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--bg-secondary-color);
+  /* border: 1px solid red; */
+}
+
+.projects-section h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--bg-primary-color);
+  margin-top: 1em;
+  letter-spacing: 0.5px;
+}
+
+.projects-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  /* border: 1px solid red; */
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  background-color: var(--bg-primary-color);
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+  padding: 30px;
+  transition: all 0.3s ease-out;
+}
+
+.project-header h2 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: var(--title-color);
+  letter-spacing: 0.5px;
+}
+
+.project-header p {
+  text-align: justify;
+  margin-top: -1em;
+  word-wrap: break-word;
+  color: var(--text-secondary-color);
+}
+
+.project-logo ion-icon {
+  float: right;
+  font-size: 2.5em;
+}
+
+.project:hover {
+  transform: translateY(-0.5em);
+}
+
+.projects-section button {
+  font-size: 0.9em;
+  font-weight: 500;
+  background-color: var(--bg-primary-color);
+  padding: 0.7em 0.8em;
+  border: 2px solid var(--title-color);
+  border-radius: 3em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.projects-section button a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+
+.projects-section button:hover {
+  transform: translateY(-0.25em);
+}
+
+.projects-row:nth-child(2) .project:nth-child(1) {
+  border-left: 3px solid red;
+}
+
+.projects-row:nth-child(2) .project:nth-child(2) {
+  border-left: 3px solid purple;
+}
+
+.projects-row:nth-child(2) .project:nth-child(3) {
+  border-left: 3px solid blue;
+}
+
+.projects-row:nth-child(3) .project:nth-child(1) {
+  border-left: 3px solid green;
+}
+
+.projects-row:nth-child(3) .project:nth-child(2) {
+  border-left: 3px solid gray;
+}
+
+.projects-row:nth-child(3) .project:nth-child(3) {
+  border-left: 3px solid red;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-secondary-color);
+  min-height: 42vh;
+}
+
+.footer-header h2 {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: var(--bg-primary-color);
+  margin-top: 1em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+.footer-links li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  color: var(--bg-primary-color);
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.footer-links li a:hover {
+  background-color: var(--bg-primary-color);
+  color: var(--bg-secondary-color);
 }
