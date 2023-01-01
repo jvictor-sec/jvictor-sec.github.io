@@ -487,6 +487,7 @@
   }
 
   .home-section {
+    margin-top: 5em;
     text-align: center;
   }
 
@@ -496,6 +497,8 @@
   }
 
   .card-container {
+    /* border: 1px solid red; */
+    margin-top: -5em;
     flex-direction: column;
   }
 
