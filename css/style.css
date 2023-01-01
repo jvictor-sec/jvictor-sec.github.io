@@ -6,7 +6,6 @@
   --bg-secondary-color: #11257D;
   --title-color: #141C3A;
   --border-color: #E6EDF6;
-  /* --margin-color:  */
 }
 
 * {
@@ -14,7 +13,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* background-color: var(--text-primary-color); */
 }
 
 /*
@@ -38,8 +36,6 @@
   justify-content: space-around;
   align-items: center;
   height: 12vh;
-  /* background-color: black; */
-  /* border-bottom: 1px solid red; */
 }
 
 .logo a {
@@ -59,7 +55,6 @@
   align-items: center;
   list-style: none;
   gap: 5em;
-  /* border: 1px solid red; */
 }
 
 .menu-container li a {
@@ -91,10 +86,23 @@
   background-color: var(--primary-color);
 }
 
+.hamburguer-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburguer-menu .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all ease-in-out 0.3s;
+  background-color: black;
+}
+
 .section {
   min-height: 82vh;
-  padding: 2em 8em;
-  /* border: 1px solid red; */
+  padding: 2em 6em;
 }
 
 
@@ -110,8 +118,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 12vh;
-  /* text-align: center; */
-  /* border: 1px solid red; */
 }
 
 .home-section h2 {
@@ -145,7 +151,6 @@
   align-items: center;
   text-align: center;
   background-color: var(--primary-color);
-  /* border: 1px solid red; */
 }
 
 #about-section h2 {
@@ -172,21 +177,18 @@
 #skills-section {
   display: flex;
   justify-content: center;
-  /* border: 1px solid red; */
+  align-items: center;
 }
 
 .card-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* height: auto; */
+  height: auto;
   margin-top: -10em;
   background-color: var(--bg-primary-color);
   border: 1px solid var(--border-color);
   border-radius: 1.5em;
-  /* border: 1px solid red; */
-  /* padding: 2em; */
-  /* border: 1px solid red; */
 }
 
 .card {
@@ -197,7 +199,6 @@
   width: 33%;
   padding: 2em;
   height: 100%;
-  /* border: 1px solid red; */
 }
 
 .card:nth-child(2) {
@@ -210,8 +211,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 35%;  */
-  /* border: 1px solid red; */
 }
 
 .card-logo {
@@ -275,13 +274,11 @@
 
 #projects-section {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1em;
   background-color: var(--bg-secondary-color);
-  /* border: 1px solid red; */
 }
 
 #projects-section h2 {
@@ -296,7 +293,6 @@
   display: flex;
   justify-content: center;
   gap: 0.5em;
-  /* border: 1px solid red; */
 }
 
 .project {
@@ -346,12 +342,6 @@
   cursor: pointer;
   transition: 0.3s;
 }
-
-/* .projects-section button a {
-  text-decoration: none;
-
-} */
-
 
 #projects-section .learn-more:hover {
   color: var(--bg-primary-color);
@@ -427,9 +417,13 @@
   font-weight: 500
 }
 
-/* @media (max-width: 810px) {
+@media (max-width: 810px) {
   .menu-container {
     gap: 2em;
+  }
+
+  .home-section {
+    margin-top: 0;
   }
 
   .section {
@@ -439,4 +433,91 @@
   .home-section img {
     width: 60%;
   }
-} */
+
+  #skills-section {
+    padding: 1em 1em;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .nav-container {
+    height: 10vh;
+  }
+
+  .hamburguer-menu {
+    display: block;
+  }
+
+  .hamburguer-menu.active .bar:nth-child(2) {
+    opacity: 0
+  }
+
+  .hamburguer-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburguer-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-container {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background: var(--bg-primary-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .menu-container li {
+    margin: 16px 0;
+  }
+
+  .menu-container.active {
+    left: 0;
+  }
+
+  .section {
+    padding: 1em 1.5em;
+  }
+
+  .home-section {
+    text-align: center;
+  }
+
+  .home-section img {
+    width: 90%;
+    margin-top: 1em;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card:nth-child(2) {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .projects-row {
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .footer-header h2 {
+    font-size: 1.2em;
+  }
+}
