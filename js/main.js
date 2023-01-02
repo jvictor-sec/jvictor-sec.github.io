@@ -2,6 +2,11 @@ const menuLinks = document.querySelectorAll('.menu-container li a[href^="#"]');
 const menuHeight = document.querySelector('nav').clientHeight;
 const menu = document.querySelector('.menu-container');
 const hamburguerMenu = document.querySelector('.hamburguer-menu');
+const copyrightYear = document.querySelector('#copyright-year');
+
+// Setando o ano atual
+const date = new Date();
+copyrightYear.textContent = date.getFullYear();
 
 
 hamburguerMenu.addEventListener('click', () => {
@@ -13,7 +18,6 @@ function getDistanceFromTheTop(element) {
   hrefSection = element.getAttribute('href');
 
   if(hrefSection == "#skills-section") {
-    // console.log(hrefSection)
     return document.querySelector('.card-container').offsetTop;
   } else {
     const id = hrefSection;
