@@ -1,0 +1,3 @@
+.text-container, .about-text, .project-card {
+  visibility: hidden;
+}
