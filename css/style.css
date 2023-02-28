@@ -492,22 +492,8 @@ html {
     display: none
   }
 
-  /* #about-section .about-container {
-    width: 100%;
-  } */
-
-  /* #projects-section {
-    padding: 4em 1em;
-  } */
-
-  /* #projects-section .projects-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 4em;
-  } */
-
   #home-section .text-container p {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
   }
 
   #about-section .about-container .about-text {
@@ -516,26 +502,26 @@ html {
 
   #about-section .about-container .about-text h2.title {
     text-align: center;
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
   }
 
   #about-section .about-container .about-text p {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     width: 100%;
   }
 
-  #skills-section .skills-content h2.title {
+  /* #skills-section .skills-content h2.title {
     font-size: 3.5em;
   }
 
   #skills-section .skills-content .skills-container h2.title {
     font-size: 2.5em;
-  }
+  } */
 
   #skills-section .skills-content .skills-container .skill-row-container {
     gap: 2em;
   }
-
+/*
   #skills-section .skills-content .skills-container .skill-row-container .skill-logo {
     width: 100px;
     height: 100px;
@@ -551,14 +537,13 @@ html {
 
   #projects-section h2.title {
     font-size: 3.5em;
-  }
+  } */
 
   #projects-section .projects-container .project-card {
     width: 85%;
-    /* border: 1px solid red; */
   }
 
-  #projects-section .projects-container .project-card .project-card-header h2.title {
+  /* #projects-section .projects-container .project-card .project-card-header h2.title {
     font-size: 2.5em;
   }
 
@@ -568,72 +553,26 @@ html {
 
   #projects-section .projects-container .project-card .project-card-body .project-card-button {
     font-size: 1.5em;
-  }
+  } */
 
   #footer-container {
     flex-direction: column;
     padding: 0 2em 2em;
-    /* border: 1px solid red; */
   }
 
-  #footer-container .footer-made-by a {
+  /* #footer-container .footer-made-by a {
     font-size: 1.5em;
   }
 
   #footer-container .footer-social-media a {
     font-size: 2em;
-  }
+  } */
 }
 
 @media screen and (max-width: 650px){
   .section {
     padding: 0.5em 0.5em;
   }
-
-  /* .header-container {
-    background-color: var(--dark-black-color);
-  }
-
-  .header-container .nav-container .menu-container {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: var(--dark-black-color);
-    width: 100%;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .header-container .nav-container .menu-container li {
-    margin: 16px 0;
-  }
-
-  .header-container .nav-container .menu-container.active {
-    left: 0;
-  }
-
-  .header-container .nav-container .hamburguer-menu {
-    display: block;
-  }
-
-  .header-container .nav-container .hamburguer-menu.active .bar:nth-child(2) {
-    opacity: 0
-  }
-
-  .header-container .nav-container .hamburguer-menu.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .header-container .nav-container .hamburguer-menu.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .header-container .button-container {
-    display: none
-  } */
 
   #home-section .text-container {
     width: 100%;
@@ -651,16 +590,8 @@ html {
     padding: 1em 1em;
   }
 
-  /* #about-section .about-container {
-    padding: 0.5em 0.5em;
-  } */
-
-  /* #about-section .about-container .about-text h2.title {
-    text-align: center;
-  } */
-
-  /* #about-section .about-container .about-text p  {
-    width: 100%;
+  /* #about-section .about-container .about-text p {
+    font-size: 1em;
   } */
 
   #projects-section a {
@@ -675,7 +606,7 @@ html {
     padding: 4em 0.5em;
   }
 
-  #projects-section .projects-container .project-card .project-card-body p {
-    font-size: 1.5em;
-  }
+  /* #projects-section .projects-container .project-card .project-card-body p {
+    font-size: 1em;
+  } */
 }
