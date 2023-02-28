@@ -23,4 +23,6 @@ menuLinks.forEach(links => {
   });
 });
 
-// particlesJS.load('particles-container', 'particlesjs-config.json');
+particlesJS.load('projects-section', './js/particlesjs-config.json', function() {
+  console.log('callback - particles.js config loaded');
+});
