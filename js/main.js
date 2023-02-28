@@ -22,7 +22,3 @@ menuLinks.forEach(links => {
     menu.classList.remove('active');
   });
 });
-
-particlesJS.load('projects-section', './js/particlesjs-config.json', function() {
-  console.log('callback - particles.js config loaded');
-});

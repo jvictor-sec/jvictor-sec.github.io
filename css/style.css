@@ -266,48 +266,34 @@ html {
 
 #projects-section {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  /* border: 1px solid red; */
-  background-color: var(--dark-black-color);
-
-  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/img/project-background.jpg');
-  background-position: center;
-  background-size: cover; */
-}
-
-#projects-section .projects-modal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   gap: 2em;
-  position: absolute;
-  /* top: 50%; */
-  /* left: 50%; */
-  /* padding: 4em; */
-  /* border: 1px solid red; */
-  /* text-align: center; */
+  background-color: var(--dark-black-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/img/project-background.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
-#projects-section .projects-modal a {
+#projects-section a {
   color: var(--white);
+  font-size: 1.5em;
   text-decoration: none;
   font-weight: 300;
 }
 
-#projects-section .projects-modal a span {
+#projects-section a span {
   color: var(--ligth-blue-color);
   cursor: pointer;
   transition: 0.3s all;
 }
 
-#projects-section .projects-modal a span:hover {
+#projects-section a span:hover {
   color: var(--dark-blue-color);
 }
 
-#projects-section .projects-modal .projects-container {
+#projects-section .projects-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -315,7 +301,7 @@ html {
   gap: 2em;
 }
 
-#projects-section .projects-modal .projects-container .project-card {
+#projects-section .projects-container .project-card {
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
@@ -327,18 +313,18 @@ html {
   transition: 0.5s all;
 }
 
-#projects-section .projects-modal .projects-container .project-card:hover {
+#projects-section .projects-container .project-card:hover {
   transform: translateY(-0.5em);
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-body,
-#projects-section .projects-modal .projects-container .project-card .project-card-header {
+#projects-section .projects-container .project-card .project-card-body,
+#projects-section .projects-container .project-card .project-card-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-header {
+#projects-section .projects-container .project-card .project-card-header {
   background-color: var(--ligth-blue-color);
   border-radius: 1em 1em 0 0;
   width: 100%;
@@ -346,28 +332,28 @@ html {
   gap: 0.5em;
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-header h2.title {
+#projects-section .projects-container .project-card .project-card-header h2.title {
   font-size: 1.2em;
   font-weight: 600;
   color: var(--dark-black-color);
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-header i {
+#projects-section .projects-container .project-card .project-card-header i {
   font-size: 2em;
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-body {
+#projects-section .projects-container .project-card .project-card-body {
   gap: 2em;
   padding: 1em 3em;
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-body p {
+#projects-section .projects-container .project-card .project-card-body p {
   color: var(--white);
   font-weight: 300;
   text-align: justify;
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-body .project-card-button {
+#projects-section .projects-container .project-card .project-card-body .project-card-button {
   border: none;
   text-decoration: none;
   width: 100%;
@@ -383,7 +369,7 @@ html {
   transition: 0.3s all;
 }
 
-#projects-section .projects-modal .projects-container .project-card .project-card-body .project-card-button:hover {
+#projects-section .projects-container .project-card .project-card-body .project-card-button:hover {
   background-color: var(--dark-blue-color);
 }
 
@@ -449,14 +435,14 @@ html {
     padding: 4em 1em;
   }
 
-  #projects-section .projects-modal .projects-container {
+  #projects-section .projects-container {
     flex-direction: column;
     align-items: center;
     gap: 4em;
   }
 }
 
-@media(max-width: 900px) {
+@media screen and (min-width: 650px) {
   .section {
     padding: 2em 2em;
   }
@@ -473,6 +459,7 @@ html {
     flex-direction: column;
     background-color: var(--dark-black-color);
     width: 100%;
+    font-size: 1.5em;
     text-align: center;
     transition: 0.3s;
   }
@@ -505,42 +492,89 @@ html {
     display: none
   }
 
-  #home-section .text-container h1.title {
-    font-size: 3em;
+  #home-section .text-container p {
+    font-size: 1.5em;
   }
 
-  #home-section .text-container h2.title {
-    font-size: 2em;
+  #about-section .about-container .about-text h2.title {
+    font-size: 2.5em;
+  }
+
+  #about-section .about-container .about-text p {
+    font-size: 1.5em;
+  }
+
+  #skills-section .skills-content h2.title {
+    font-size: 3.5em;
+  }
+
+  #skills-section .skills-content .skills-container h2.title {
+    font-size: 2.5em;
   }
 
   #skills-section .skills-content .skills-container .skill-row-container {
     gap: 2em;
   }
 
-  #projects-section .projects-modal .projects-container .project-card {
+  #skills-section .skills-content .skills-container .skill-row-container .skill-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #skills-section .skills-content .skills-container .skill-row-container .skill-logo i {
+    font-size: 3.5em;
+  }
+
+  #skills-section .skills-content .skills-container .skill-row-container .skill-title {
+    font-size: 1.5em;
+  }
+
+  #projects-section h2.title {
+    font-size: 3.5em;
+  }
+
+  #projects-section .projects-container .project-card {
     width: 55%;
+    /* border: 1px solid red; */
+  }
+
+  #projects-section .projects-container .project-card .project-card-header h2.title {
+    font-size: 2.5em;
+  }
+
+  #projects-section .projects-container .project-card .project-card-body p {
+    font-size: 1.5em;
+  }
+
+  #projects-section .projects-container .project-card .project-card-body .project-card-button {
+    font-size: 1.5em;
   }
 
   #footer-container {
     flex-direction: column;
     padding: 0 2em 2em;
+    /* border: 1px solid red; */
+  }
+
+  #footer-container .footer-made-by a {
+    font-size: 1.5em;
+  }
+
+  #footer-container .footer-social-media a {
+    font-size: 2em;
   }
 }
 
-@media(max-width: 650px) {
+@media(min-width: 360px) {
+  .header-container .nav-container .menu-container {
+    font-size: 2.5em;
+  }
+
   #home-section .text-container {
     display: flex;
     flex-direction: column;
     gap: 2em;
     text-align: center;
-  }
-
-  #home-section .text-container h1.title {
-    font-size: 2em;
-  }
-
-  #home-section .text-container h2.title {
-    font-size: 1.5em;
   }
 
   #home-section .text-container p {
@@ -563,11 +597,19 @@ html {
     width: 100%;
   }
 
-  #projects-section .projects-modal a {
+  #projects-section a {
     text-align: center;
   }
 
-  #projects-section .projects-modal .projects-container .project-card {
+  #projects-section .projects-container .project-card {
     width: 95%;
+  }
+
+  #projects-section .projects-container .project-card .project-card-body {
+    padding: 4em 0.5em;
+  }
+
+  #projects-section .projects-container .project-card .project-card-body p {
+    font-size: 2.5em;
   }
 }
