@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang=pt-br>
+<html lang="pt-br" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Victor - Desenvolvedor Fullstack</title>
+    <meta charset="utf-8">
+    <title>João Victor | Desenvolvedor Web</title>
 
-    <!--  Terceiros -->
+    <!--  Autoria própria -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scrollreveal.css">
+    <script src="./js/main.js" charset="utf-8" defer></script>
+    <script src="./js/scrollreveal.js" charset="utf-8" defer></script>
+
+    <!-- Terceiros -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <!-- Autoria própria -->
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js" defer></script>
-
+    <script src="https://kit.fontawesome.com/8825d8f512.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <header class="header-container">
-      <nav class="nav-container">
-        <div class="logo">
-          <a href="https://jvictort.github.io/">João Victor</a>
-        </div>
+      <div class="logo-container">
+        <a href="#" class="title">João Victor</a>
+      </div>
 
+      <nav class="nav-container">
         <ul class="menu-container">
+          <li><a href="#home-section">Home</a></li>
           <li><a href="#about-section">Sobre</a></li>
-          <li><a href="#skills-section">Competências</a></li>
+          <li><a href="#skills-section">Habilidades</a></li>
           <li><a href="#projects-section">Projetos</a></li>
           <li><a href="#footer-container">Contato</a></li>
-          <li><a href="mailto:jvteodorobrasil@gmail.com" class="mail">Fale comigo</a></li>
         </ul>
 
         <div class="hamburguer-menu">
@@ -41,207 +40,176 @@
         </div>
 
       </nav>
+
+      <div class="button-container">
+        <a href="malito:jvteodorobrasil@gmail.com" class="header-button border-effect">Fale comigo</a>
+      </div>
     </header>
 
     <main class="main-container">
-      <section class="home-section section">
-        <h2>Desenvolvedor Fullstack</h2>
-
-        <p>Desenvolvo aplicações completas que resolvem os problemas cotidianos</p>
-
-        <img src="./assets/images/develop-web.gif" alt="https://media.tenor.com/CeDk6XdCgOUAAAAi/develop-web.gif">
+      <section id="home-section" class="section">
+        <div class="text-container">
+          <h1 class="title">Olá, me chamo <span>&lt;João&gt;;</span></h1>
+          <h2 class="title">Desenvolvedor de Software e estudante de Cybersecurity</h2>
+          <p>Construo aplicações modernas, ágeis e <span>seguras.</span></p>
+        </div>
       </section>
 
       <section id="about-section" class="section">
-        <h2>Seja bem vindo! Eu me chamo João Victor.</h2>
-        <p>Desde o início dos meus estudos em 2020, sempre tive uma curiosidade acentuada com relação a como as
-          coisas realmente funcionavam. Assim, desenvolvi minhas habilidades buscando aprender como cada linha de
-          código era compilada, o que me levou ao mundo da cibersegurança.</p>
+        <div class="about-container">
+          <div class="about-text">
+            <h2 class="title">Desenvolvedor de Software</h2>
+            <p>Tudo começou em 2015 quando ganhei meu primeiro computador. Desde
+              então me vi horas na frente do desktop, testando o sistema operacional
+              ao máximo até precisar restaurá-lo. Com essa curiosidade dei início aos
+               meus estudos em Desenvolvimento de Software em 2020 e durante a trajet
+               ória me apaixonei por Cybersecurity. Hoje atuo como Desenvolvedor Web
+               e estudo tópicos de Cybersecurity por hobbie.   </p>
+          </div>
+
+          <img src="./assets/img/about-photo.png" alt="About-photo" class="about-photo">
+        </div>
       </section>
 
       <section id="skills-section" class="section">
-        <div class="card-container">
-          <div class="card">
-              <div class="card-header card-section">
-                <div class="card-logo">
-                  <ion-icon name="terminal-outline"></ion-icon>
+        <div class="skills-content">
+          <h2 class="title">Habilidades</h2>
+
+          <div class="skills-container">
+            <h2 class="title">Front-end</h2>
+            <div class="skill-row-container">
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <h2 class="title skill-title">HTML5</h2>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <p class="title skill-title">CSS3</h2>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-square-js"></i>
                 </div>
 
-                <h2>Backend</h2>
-
-                <p>Prezo por rotinas bem feitas, sucintas e que sigam
-                as convenções da linguagem em questão. </p>
+                <h2 class="title skill-title">Javascript</h2>
               </div>
 
-              <div class="card-list card-section">
-                <h2>Aplicação: </h2>
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-bootstrap"></i>
+                </div>
 
-                <p>API, Websites, Webscraping</p>
+                <h2 class="title skill-title">Bootstrap</h2>
               </div>
 
-              <div class="card-items card-section">
-                <h2>Tecnologias: </h2>
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-react"></i>
+                </div>
 
-                <ul>
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>Python</li>
-                </ul>
+                <h2 class="title skill-title">React.js</h2>
               </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-section">
-              <div class="card-logo">
-                <ion-icon name="code-slash-outline"></ion-icon>
-              </div>
-
-              <h2>Frontend</h2>
-
-              <p>Prefiro construir minhas interfaces à mão,
-              pois sei exatamente como os elementos vão se comportar.</p>
             </div>
 
-            <div class="card-list card-section">
-              <h2>Aplicação: </h2>
-
-              <p>Landing Page, Web, UX, UI</p>
-            </div>
-
-            <div class="card-items card-section">
-              <h2>Tecnologias: </h2>
-
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript (ES6)</li>
-                <li>Bootstrap</li>
-                <li>Figma</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header card-section">
-              <div class="card-logo">
-                <ion-icon name="bug-outline"></ion-icon>
+            <h2 class="title">Back-end</h2>
+            <div class="skill-row-container">
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-php"></i>
+                </div>
+                <h2 class="title skill-title">PHP</h2>
               </div>
 
-              <h2>Cibersegurança</h2>
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <h2 class="title skill-title">Python</h2>
+              </div>
 
-              <p>Gosto de fazer análises de redes, relatórios
-              de segurança e testes locais por diversão.</p>
-            </div>
+              <div class="skill-card">
+                <div class="skill-logo">
+                  <i class="fa-brands fa-node-js"></i>
+                </div>
 
-            <div class="card-list card-section">
-              <h2>Aplicação: </h2>
-
-              <p>Redes, Servidores, Bug Bounty</p>
-            </div>
-
-            <div class="card-items card-section">
-              <h2>Tecnologias: </h2>
-
-              <ul>
-                <li>Packet Tracer</li>
-                <li>Linux</li>
-                <li>Python</li>
-              </ul>
+                <h2 class="title skill-title">Node.js</h2>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section id="projects-section" class="section">
+        <h2 class="title">Projetos</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-card-header">
+              <h2 class="title">Address Book</h2>
 
-        <h2>Projetos</h2>
-
-        <div class="projects-row">
-          <div class="project">
-            <div class="project-header">
-              <h2>Intrabanking</h2>
-              <p>Landing page para o meio bancário. Clique <a href="https://github.com/jvictort/intrabanking">aqui</a> para saber mais.</p>
+              <i class="fa-solid fa-address-book"></i>
             </div>
 
-            <div class="project-logo">
-              <ion-icon name="cash-outline"></ion-icon>
-            </div>
-          </div>
+            <div class="project-card-body">
+                <p>Aplicativo de agenda criada em React. O projeto foi desenvolvido
+                como um exercício para aprender a biblioteca e possibilita cadastro,
+              listagem e exclusão de contatos.</p>
 
-          <div class="project">
-            <div class="project-header">
-              <h2>Rocketpay</h2>
-              <p>Projeto promovido pela Rocketseat. Clique <a href="https://github.com/jvictort/rocketpay-explorerlab">aqui</a> para saber mais.</p>
-            </div>
-
-            <div class="project-logo">
-              <ion-icon name="card-outline"></ion-icon>
+              <a href="https://github.com/jvictort/react-addressbook.git" class="project-card-button">Veja o projeto</a>
             </div>
           </div>
 
-          <div class="project">
-            <div class="project-header">
-              <h2>Angular To-do list</h2>
-              <p>To-do List programada em Typescript utilizando Angular. Clique <a href="https://github.com/jvictort/angular-todolist">aqui</a> para saber mais.</p>
+          <div class="project-card">
+            <div class="project-card-header">
+              <h2 class="title">Intra Banking</h2>
+
+              <i class="fa-solid fa-building-columns"></i>
             </div>
 
-            <div class="project-logo">
-              <ion-icon name="logo-angular"></ion-icon>
-            </div>
-          </div>
-        </div>
+            <div class="project-card-body">
+                <p>Projeto desenvolvido em HTML5, CSS3 e Javascript que
+                  consiste em um aplicativo de gestão de finanças que
+                  permite cadastro, listagem, exclusão e atualização das despesas</p>
 
-        <div class="projects-row">
-          <div class="project">
-            <div class="project-header">
-              <h2>Galeria.js</h2>
-              <p>Galeria em Javascript vanilla. Clique <a href="https://github.com/jvictort/Galeria.js">aqui</a> para saber mais.</p>
-            </div>
-
-            <div class="project-logo">
-              <ion-icon name="images-outline"></ion-icon>
+                  <a href="https://github.com/jvictort/IntraBankingApp.git" class="project-card-button">Veja o projeto</a>
             </div>
           </div>
 
-          <div class="project">
-            <div class="project-header">
-              <h2>Pokédex</h2>
-              <p>Pokédex assíncrona em Javascript vanilla. Clique <a href="https://github.com/jvictort/AsyncPokedex">aqui</a> para saber mais.</p>
+          <div class="project-card">
+            <div class="project-card-header">
+              <h2 class="title">Rocketpay</h2>
+
+              <i class="fa-solid fa-rocket"></i>
             </div>
 
-            <div class="project-logo">
-              <ion-icon name="leaf-outline"></ion-icon>
-            </div>
-          </div>
+            <div class="project-card-body">
+              <p>Projeto desenvolvido no Explorer Lab, evento promovido
+              pela Rocketseat que consiste em um componente que simula um
+              formulário de preenchimento de um cartão de crédito.</p>
 
-          <div class="project">
-            <div class="project-header">
-              <h2>Financial Club</h2>
-              <p>Projeto de TCC desenvolvido em PHP, Javascript e Tailwind CSS. O projeto foi entregue à A.A. XI de Agosto.</p>
-            </div>
-
-            <div class="project-logo">
-              <ion-icon name="wallet-outline"></ion-icon>
+              <a href="https://github.com/jvictort/rocketpay-explorerlab.git" class="project-card-button">Veja o projeto</a>
             </div>
           </div>
         </div>
-
-        <a href="https://github.com/jvictort" class="learn-more">Saiba mais</a>
+        <a href="#">Deseja me contratar? Acesse meu currículo clicando <span class="border-effect">aqui.</span></a>
       </section>
 
       <footer id="footer-container">
-        <div class="footer-header">
-          <h2>Vivendo, aprendendo e codando.</h2>
+        <div class="footer-made-by">
+          <a href="#">Feito à mão por <span class="author">João Victor</span> &copy; <span id="made-by-span">2023</span></a>
         </div>
 
-        <ul class="footer-links">
-          <li><a href="https://www.linkedin.com/in/jvictorteodoro/" target="_blank" rel="noopener noreferrer" class="linkedin-logo"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-          <li><a href="https://github.com/jvictort" target="_blank" rel="noopener noreferrer" class="github-logo"><ion-icon name="logo-github"></ion-icon></a></li>
-          <li><a href="https://www.instagram.com/jvictor_t/" target="_blank" rel="noopener noreferrer" class="instagram-logo"><ion-icon name="logo-instagram"></ion-icon></a></li>
-          <li><a href="https://www.facebook.com/joaovictor.teodoro.925/" target="_blank" rel="noopener noreferrer" class="facebook-logo"><ion-icon name="logo-facebook"></ion-icon></a></li>
-        </ul>
-
-        <p><small>Feito à mão por mim - &#169; <span id="copyright-year"></span></small></p>
+        <div class="footer-social-media">
+          <a href="https://www.instagram.com/jvictor_t/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/jvictort"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jvictorteodoro/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="malito:jvteodorobrasil@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+        </div>
       </footer>
     </main>
   </body>
