@@ -278,7 +278,7 @@ html {
 
 #projects-section a {
   color: var(--white);
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   text-decoration: none;
   font-weight: 300;
 }
@@ -492,81 +492,35 @@ html {
     display: none
   }
 
-  #home-section .text-container p {
-    /* font-size: 1.5em; */
-  }
-
   #about-section .about-container .about-text {
     padding: 0.5em 0.5em;
   }
 
   #about-section .about-container .about-text h2.title {
     text-align: center;
-    /* font-size: 2.5em; */
   }
 
   #about-section .about-container .about-text p {
-    /* font-size: 1.5em; */
     width: 100%;
   }
-
-  /* #skills-section .skills-content h2.title {
-    font-size: 3.5em;
-  }
-
-  #skills-section .skills-content .skills-container h2.title {
-    font-size: 2.5em;
-  } */
 
   #skills-section .skills-content .skills-container .skill-row-container {
     gap: 2em;
   }
-/*
-  #skills-section .skills-content .skills-container .skill-row-container .skill-logo {
-    width: 100px;
-    height: 100px;
-  }
 
-  #skills-section .skills-content .skills-container .skill-row-container .skill-logo i {
-    font-size: 3.5em;
+  #projects-section a {
+    text-align: center;
   }
-
-  #skills-section .skills-content .skills-container .skill-row-container .skill-title {
-    font-size: 1.5em;
-  }
-
-  #projects-section h2.title {
-    font-size: 3.5em;
-  } */
 
   #projects-section .projects-container .project-card {
     width: 85%;
   }
-
-  /* #projects-section .projects-container .project-card .project-card-header h2.title {
-    font-size: 2.5em;
-  }
-
-  #projects-section .projects-container .project-card .project-card-body p {
-    font-size: 1.5em;
-  }
-
-  #projects-section .projects-container .project-card .project-card-body .project-card-button {
-    font-size: 1.5em;
-  } */
 
   #footer-container {
     flex-direction: column;
     padding: 0 2em 2em;
   }
 
-  /* #footer-container .footer-made-by a {
-    font-size: 1.5em;
-  }
-
-  #footer-container .footer-social-media a {
-    font-size: 2em;
-  } */
 }
 
 @media screen and (max-width: 650px){
@@ -582,20 +536,20 @@ html {
     text-align: center;
   }
 
+  #home-section .text-container h1.title {
+    font-size: 2.5em;
+  }
+
+  #home-section .text-container h2.title {
+    font-size: 1.5em;
+  }
+
   #home-section .text-container p {
     font-weight: 400;
   }
 
   #about-section {
     padding: 1em 1em;
-  }
-
-  /* #about-section .about-container .about-text p {
-    font-size: 1em;
-  } */
-
-  #projects-section a {
-    text-align: center;
   }
 
   #projects-section .projects-container .project-card {
@@ -606,7 +560,7 @@ html {
     padding: 4em 0.5em;
   }
 
-  /* #projects-section .projects-container .project-card .project-card-body p {
+  #projects-section .projects-container .project-card .project-card-body p {
     font-size: 1em;
-  } */
+  }
 }
