@@ -22,3 +22,5 @@ menuLinks.forEach(links => {
     menu.classList.remove('active');
   });
 });
+
+// particlesJS.load('particles-container', 'particlesjs-config.json');
