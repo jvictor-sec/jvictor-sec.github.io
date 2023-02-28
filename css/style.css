@@ -266,29 +266,48 @@ html {
 
 #projects-section {
   display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 1px solid red; */
+  background-color: var(--dark-black-color);
+
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/img/project-background.jpg');
+  background-position: center;
+  background-size: cover; */
+}
+
+#projects-section .projects-modal {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  padding: 4em 8em;
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* padding: 4em; */
+  /* border: 1px solid red; */
+  /* text-align: center; */
 }
 
-#projects-section a {
+#projects-section .projects-modal a {
   color: var(--white);
   text-decoration: none;
   font-weight: 300;
 }
 
-#projects-section a span {
+#projects-section .projects-modal a span {
   color: var(--ligth-blue-color);
   cursor: pointer;
   transition: 0.3s all;
 }
 
-#projects-section a span:hover {
+#projects-section .projects-modal a span:hover {
   color: var(--dark-blue-color);
 }
 
-#projects-section .projects-container {
+#projects-section .projects-modal .projects-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -296,7 +315,7 @@ html {
   gap: 2em;
 }
 
-#projects-section .projects-container .project-card {
+#projects-section .projects-modal .projects-container .project-card {
   border-radius: 0.5em;
   display: flex;
   flex-direction: column;
@@ -308,18 +327,18 @@ html {
   transition: 0.5s all;
 }
 
-#projects-section .projects-container .project-card:hover {
+#projects-section .projects-modal .projects-container .project-card:hover {
   transform: translateY(-0.5em);
 }
 
-#projects-section .projects-container .project-card .project-card-body,
-#projects-section .projects-container .project-card .project-card-header {
+#projects-section .projects-modal .projects-container .project-card .project-card-body,
+#projects-section .projects-modal .projects-container .project-card .project-card-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#projects-section .projects-container .project-card .project-card-header {
+#projects-section .projects-modal .projects-container .project-card .project-card-header {
   background-color: var(--ligth-blue-color);
   border-radius: 1em 1em 0 0;
   width: 100%;
@@ -327,28 +346,28 @@ html {
   gap: 0.5em;
 }
 
-#projects-section .projects-container .project-card .project-card-header h2.title {
+#projects-section .projects-modal .projects-container .project-card .project-card-header h2.title {
   font-size: 1.2em;
   font-weight: 600;
   color: var(--dark-black-color);
 }
 
-#projects-section .projects-container .project-card .project-card-header i {
+#projects-section .projects-modal .projects-container .project-card .project-card-header i {
   font-size: 2em;
 }
 
-#projects-section .projects-container .project-card .project-card-body {
+#projects-section .projects-modal .projects-container .project-card .project-card-body {
   gap: 2em;
   padding: 1em 3em;
 }
 
-#projects-section .projects-container .project-card .project-card-body p {
+#projects-section .projects-modal .projects-container .project-card .project-card-body p {
   color: var(--white);
   font-weight: 300;
   text-align: justify;
 }
 
-#projects-section .projects-container .project-card .project-card-body .project-card-button {
+#projects-section .projects-modal .projects-container .project-card .project-card-body .project-card-button {
   border: none;
   text-decoration: none;
   width: 100%;
@@ -364,7 +383,7 @@ html {
   transition: 0.3s all;
 }
 
-#projects-section .projects-container .project-card .project-card-body .project-card-button:hover {
+#projects-section .projects-modal .projects-container .project-card .project-card-body .project-card-button:hover {
   background-color: var(--dark-blue-color);
 }
 
@@ -430,7 +449,7 @@ html {
     padding: 4em 1em;
   }
 
-  #projects-section .projects-container {
+  #projects-section .projects-modal .projects-container {
     flex-direction: column;
     align-items: center;
     gap: 4em;
@@ -498,7 +517,7 @@ html {
     gap: 2em;
   }
 
-  #projects-section .projects-container .project-card {
+  #projects-section .projects-modal .projects-container .project-card {
     width: 55%;
   }
 
@@ -544,11 +563,11 @@ html {
     width: 100%;
   }
 
-  #projects-section a {
+  #projects-section .projects-modal a {
     text-align: center;
   }
 
-  #projects-section .projects-container .project-card {
+  #projects-section .projects-modal .projects-container .project-card {
     width: 95%;
   }
 }
