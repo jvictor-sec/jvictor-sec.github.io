@@ -1,29 +1,29 @@
 ScrollReveal({reset: true})
 
-// Animação do texto da Home
-ScrollReveal().reveal('.text-container', {
+// Home section
+ScrollReveal().reveal('#home-content', {
     delay: 300,
     origin: 'left',
     distance: '150px',
     duration: 500
 });
 
-// Animação da seção Sobre e a imagem
-ScrollReveal().reveal('.about-text', {
+// About section
+ScrollReveal().reveal('#about-content', {
     delay: 300,
     origin: 'left',
     distance: '150px',
     duration: 500
 });
 
-ScrollReveal().reveal('.about-photo', {
+ScrollReveal().reveal('#about-img', {
     delay: 300,
     origin: 'bottom',
     distance: '150px',
     duration: 500
 });
 
-// Animação da seção Projetos
+// Projects section
 ScrollReveal().reveal('.project-card', {
     delay: 300,
     origin: 'bottom',

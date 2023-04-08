@@ -1,3 +1,6 @@
-.text-container, .about-text, .project-card {
+#home-content,
+#about-content,
+#about-img,
+.project-card {
   visibility: hidden;
 }

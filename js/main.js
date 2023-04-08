@@ -1,26 +1,47 @@
-const headerContainer = document.querySelector('.header-container');
-const hamburguerMenu = document.querySelector('.hamburguer-menu');
-const menuLinks = document.querySelectorAll('.nav-container li a[href^="#"]');
-const menuContainer = document.querySelector('.menu-container');
+const header = document.querySelector('header');
+
+const mobileMenu = document.querySelector('#mobile-menu');
+const menuContainer = document.querySelector('#menu-container');
+const menuLinks = document.querySelectorAll('#menu-container li a[href^="#"]');
+
+const currentYear = document.querySelector('#current-year');
+const selectSkills = document.querySelectorAll('.select-skill');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > headerContainer.offsetHeight) {
-      headerContainer.classList.add("active")
+  if (window.scrollY > header.offsetHeight) {
+      header.classList.add('active');
   } else {
-      headerContainer.classList.remove("active")
+      header.classList.remove('active');
   }
 });
 
-hamburguerMenu.addEventListener('click', () => {
-  hamburguerMenu.classList.toggle('active');
-  menuContainer.classList.toggle('active');
-});
+currentYear.textContent = new Date().getFullYear();
 
-menuLinks.forEach(links => {
-  links.addEventListener("click", () => {
-    hamburguerMenu.classList.remove('active');
-    menu.classList.remove('active');
+selectSkills.forEach(selectSkill => {
+  selectSkill.addEventListener('click', event => {
+    document.querySelector(`#${selectSkill.id} i`).classList.toggle('invisible');
+
+    const skillBadges = document.querySelectorAll(`.${selectSkill.id}`);
+
+    skillBadges.forEach(skillBadge => {
+      skillBadge.classList.toggle('disabled-badge');
+    });
   });
 });
 
-// particlesJS.load('particles-container', 'particlesjs-config.json');
+mobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  menuContainer.classList.toggle('left-1');
+    console.log(menuContainer)
+});
+
+menuLinks.forEach(links => {
+  links.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    menuContainer.classList.remove('left-1');
+  });
+});
+
+particlesJS.load('particles-container', './assets/particlesjs/particlesjs-config.json', () => {
+  console.log('Particles.js loaded...');
+});
