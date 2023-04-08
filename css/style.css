@@ -695,28 +695,10 @@ header.active {
 
 .flex {
   display: flex;
-<<<<<<< HEAD
 }
 
 .hidden {
   display: none;
-=======
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  background-color: var(--dark-black-color);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/img/project-background.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-#projects-section a {
-  color: var(--white);
-  /* font-size: 1.5em; */
-  text-decoration: none;
-  font-weight: 300;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
 }
 
 .h-0 {
@@ -969,16 +951,9 @@ header.active {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
 .font-semibold {
   font-weight: 600;
 }
-=======
-@media screen and (max-width: 1100px) {
-  .section {
-    padding: 4em 4em;
-  }
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
 
 .font-thin {
   font-weight: 100;
@@ -1016,7 +991,6 @@ header.active {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-<<<<<<< HEAD
 .hover\:bg-brandCyan-dark:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(33 135 153 / var(--tw-bg-opacity));
@@ -1030,34 +1004,15 @@ header.active {
 @media (min-width: 640px) {
   .sm\:flex-row {
     flex-direction: row;
-=======
-@media screen and (max-width: 900px) {
-  .section {
-    padding: 2em 2em;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
   }
 
   .sm\:gap-0 {
     gap: 0px;
   }
 
-<<<<<<< HEAD
   .sm\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
-=======
-  .header-container .nav-container .menu-container {
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: var(--dark-black-color);
-    width: 100%;
-    font-size: 1.5em;
-    text-align: center;
-    transition: 0.3s;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
   }
 
   .sm\:px-32 {
@@ -1096,48 +1051,25 @@ header.active {
     margin-bottom: auto;
   }
 
-<<<<<<< HEAD
   .lg\:block {
     display: block;
   }
 
   .lg\:hidden {
     display: none;
-=======
-  #about-section .about-container .about-text {
-    padding: 0.5em 0.5em;
-  }
-
-  #about-section .about-container .about-text h2.title {
-    text-align: center;
-  }
-
-  #about-section .about-container .about-text p {
-    width: 100%;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
   }
 
   .lg\:w-1\/3 {
     width: 33.333333%;
   }
 
-<<<<<<< HEAD
   .lg\:w-2\/3 {
     width: 66.666667%;
-=======
-  #projects-section a {
-    text-align: center;
-  }
-
-  #projects-section .projects-container .project-card {
-    width: 85%;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
   }
 
   .lg\:w-3\/4 {
     width: 75%;
   }
-<<<<<<< HEAD
 
   .lg\:w-auto {
     width: auto;
@@ -1145,26 +1077,6 @@ header.active {
 
   .lg\:flex-row {
     flex-direction: row;
-=======
-
-}
-
-@media screen and (max-width: 650px){
-  .section {
-    padding: 0.5em 0.5em;
-  }
-
-  #home-section .text-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    text-align: center;
-  }
-
-  #home-section .text-container h1.title {
-    font-size: 2.5em;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
   }
 
   .lg\:items-start {
@@ -1179,7 +1091,6 @@ header.active {
     gap: 2.5rem;
   }
 
-<<<<<<< HEAD
   .lg\:gap-8 {
     gap: 2rem;
   }
@@ -1199,17 +1110,5 @@ header.active {
 
   .lg\:text-justify {
     text-align: justify;
-=======
-  #projects-section .projects-container .project-card {
-    width: 95%;
-  }
-
-  #projects-section .projects-container .project-card .project-card-body {
-    padding: 4em 0.5em;
-  }
-
-  #projects-section .projects-container .project-card .project-card-body p {
-    font-size: 1em;
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
   }
 }

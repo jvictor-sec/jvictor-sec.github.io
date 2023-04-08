@@ -41,10 +41,7 @@ menuLinks.forEach(links => {
     menuContainer.classList.remove('left-1');
   });
 });
-<<<<<<< HEAD
 
 particlesJS.load('particles-container', './assets/particlesjs/particlesjs-config.json', () => {
   console.log('Particles.js loaded...');
 });
-=======
->>>>>>> 6b468751d68095631d0f752370acc65fbb84819d
