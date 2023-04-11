@@ -32,7 +32,6 @@ selectSkills.forEach(selectSkill => {
 mobileMenu.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
   menuContainer.classList.toggle('left-1');
-    console.log(menuContainer)
 });
 
 menuLinks.forEach(links => {
